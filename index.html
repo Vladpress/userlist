@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    /> -->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="normalize.css" />
+    <link rel="stylesheet" href="media.css" />
+    <title>User List</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="h1">Add new user</h1>
+      <form id="user-form" class="form">
+        <div class="form-group">
+          <label for="name">name</label>
+          <input type="text" class="form-control" id="name" />
+        </div>
+        <div class="form-group">
+          <label for="username">username</label>
+          <input type="text" class="form-control" id="username" />
+        </div>
+        <div class="form-group">
+          <label for="email">email</label>
+          <input type="text" class="form-control" id="email" />
+        </div>
+        <div class="form-group">
+          <label for="website">website</label>
+          <input type="text" class="form-control" id="website" />
+        </div>
+        <button type="submit" class="button-add-user">add user</button>
+      </form>
+      <h2 class="h2">User list</h2>
+      <table class="table" id="table">
+        <thead class="table-head">
+          <tr>
+            <th class="sorting-cells headerSortDown" scope="col">id</th>
+            <th class="sorting-cells headerSortDown" scope="col">name</th>
+            <th class="sorting-cells headerSortDown" scope="col">username</th>
+            <th class="sorting-cells headerSortDown" scope="col">email</th>
+            <th class="sorting-cells headerSortDown" scope="col">website</th>
+            <th class="sorting-cells" scope="col"></th>
+          </tr>
+        </thead>
+        <tbody id="user-list" class="tbody"></tbody>
+      </table>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="fetch.js"></script>
+  </body>
+</html>

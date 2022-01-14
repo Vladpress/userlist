@@ -38,7 +38,10 @@ class UI {
   static deleteUser(element) {
     if (element.classList.contains("delete")) {
       element.parentElement.parentElement.remove();
-      UI.showNotification("User Removed", "success");
+      const flag = document.querySelector(".alert");
+      if (!flag) {
+        UI.showNotification("User Removed", "success");
+      }
     }
   }
 

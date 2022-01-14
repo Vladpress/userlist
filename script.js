@@ -91,7 +91,9 @@ class UI {
     const container = document.querySelector(".container");
     const form = document.querySelector("#user-form");
     container.insertBefore(div, form);
-
+    if (message === "User Removed") {
+      div.style.top = "55%";
+    }
     setTimeout(() => document.querySelector(".alert").remove(), 3000);
   }
 
